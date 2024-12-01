@@ -1,1 +1,1 @@
-web: java -jar target/backend-app.jar
+web: java -jar target/blues-n-jazz-backend-1.0.0-jar-with-dependencies.jar

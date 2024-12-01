@@ -69,7 +69,7 @@
                             </descriptorRefs>
                             <archive>
                                 <manifest>
-                                    <!-- Modifica con il nome completo della classe principale -->
+                                    <!-- Specifica la tua classe principale (senza pacchetto) -->
                                     <mainClass>App</mainClass>
                                 </manifest>
                             </archive>
