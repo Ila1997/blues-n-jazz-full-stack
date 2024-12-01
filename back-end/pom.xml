@@ -17,22 +17,16 @@
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <!-- Dipendenze -->
     <dependencies>
-        <!-- JUnit per i test -->
+        <!-- JUnit 5 per i test -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
             <version>5.9.3</version>
-            <scope>test</scope>
-        </dependency>
-        
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.13.2</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -44,7 +38,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.1</version>
+                <version>3.11.0</version>
                 <configuration>
                     <source>${maven.compiler.source}</source>
                     <target>${maven.compiler.target}</target>
@@ -69,8 +63,8 @@
                             </descriptorRefs>
                             <archive>
                                 <manifest>
-                                    <!-- Specifica la tua classe principale (senza pacchetto) -->
-                                    <mainClass>App</mainClass>
+                                    <!-- Specifica la tua classe principale (con pacchetto completo) -->
+                                    <mainClass>com.ila1997.App</mainClass>
                                 </manifest>
                             </archive>
                         </configuration>
